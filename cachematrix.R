@@ -1,5 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+#rm(list = ls ())
+
+
+## Put comments here that give an overall description of what your functions do
 #Comments
 #The function 'makeCacheMatrix' creates a "matrix", 
 #which is basically a procedure that contains a function on following steps
@@ -14,10 +16,10 @@
 #print(m)
 #find determined of m
 #det(m)
-#for the inverse
+#function for the inverse
 #solve(m)
 
-
+#create makeCacheMatrix
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y)
@@ -37,6 +39,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## "matrix" returned by `makeCacheMatrix` above. 
 ## returns a matrix that is inverse
 
+#create cacheSolve
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         m <- x$getinverse()
@@ -51,8 +54,11 @@ cacheSolve <- function(x, ...) {
 }
 
 
-
-
+#test the matrix
+#test <- matrix(c(1, 1, 4, 0, 3, 1, 4, 4, 0), 3,3)
+#testCached <- makeCacheMatrix(test)
+#testInv <- cacheSolve(testCached)
+#end comment 
 
 
 
